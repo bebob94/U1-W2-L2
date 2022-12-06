@@ -43,13 +43,15 @@ if (num2 % 5===0) {
 let num3=5
 let num4=2
 
-if (num3 || num4 == 8) {
+if (num3 ===8 || num4 === 8) {
   console.log("condizione verificata");
-} else if (num3 + num4 ==8) {
+} else if (num3 + num4 ===8) {
   console.log("condizione verificata");
-  } else if (num3-num4 ==8){
+} else if (num3-num4 ===8){
   console.log("condizione verificata");
-} else{  
+} else if (num4-num3 ===8){  
+  console.log("condizione verificata");
+}else{
   console.log("condizione non verificata");
 }
 
@@ -103,16 +105,41 @@ if (blackfriday >=50) {
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
   Alla fine mostra il risultato in console.
 */
+// const block={
+// val1: 10,
+// val2: 20,
+// val3: 30,
+// }
+let val1=20
+let val2=30
+let val3=10
 
-let val1= 10
-let val2= 20
-let val3= 30
 
-const unorderlist= [val1,val2,val3]
+if (val1>=val2) {
+  if (val1>=val3) {
+    if (val2>=val3) {
+      console.log(val1, val2, val3);
+    }else
+    console.log(val1,val3,val2);
+  }else{
+    console.log(val3,val1,val2);
+  }
+}else{
+  if (val2>=val3) {
+    if (val1>=val3) {
+      console.log(val2, val1, val3);
+    }else{
+      console.log(val2, val3, val1);
+    }
+  }else{
+    console.log(val3, val2, val1);
+  }
+}
+// const unorderlist= [val1,val2,val3]
 
-console.log(unorderlist);
+// console.log(unorderlist);
 
-console.log(unorderlist.reverse()); 
+// console.log(unorderlist.reverse()); 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 8
@@ -154,7 +181,7 @@ let val =4
       console.log("Meno di 10");
     } else if (val < 5) {
       console.log("Meno di 5");
-  } else if(val>=10) {
+    } else if(val>=10) {
       console.log("Uguale a 10 o maggiore");
     }
 
