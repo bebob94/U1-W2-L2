@@ -195,13 +195,24 @@ console.log(me.skills);
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 let firstarray={}
-Object.assign({},1,2,3,4,5,6,7,8,9)
+// firstarray.push(1)
+// firstarray.push(2)
+// firstarray.push(3)
+// firstarray.push(4)
+// firstarray.push(5)
+// firstarray.push(6)
+// firstarray.push(7)
+// firstarray.push(8)
+// firstarray.push(9)
+// firstarray.push(10)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
+firstarray.pop()
+firstarray.push(100)
 
-
+console.log(firstarray);
 /* SCRIVI QUI LA TUA RISPOSTA */
