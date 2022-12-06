@@ -149,7 +149,7 @@ if (valx%2==0) {
 
 */
 
-let val =15
+let val =4
   if (val < 10) {
       console.log("Meno di 10");
     } else if (val < 5) {
@@ -187,32 +187,24 @@ console.log(me);
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
-delete me.skills
+delete me.skills.pop()
 console.log(me.skills);
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
-let firstarray={}
-// firstarray.push(1)
-// firstarray.push(2)
-// firstarray.push(3)
-// firstarray.push(4)
-// firstarray.push(5)
-// firstarray.push(6)
-// firstarray.push(7)
-// firstarray.push(8)
-// firstarray.push(9)
-// firstarray.push(10)
+const firstarray=[]
+firstarray.push(1,2,3,4,5,6,7,8,9,10)
+
+console.log(firstarray);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
-firstarray.pop()
-firstarray.push(100)
-
+firstarray[9]=100
 console.log(firstarray);
+// console.log(firstarray);
 /* SCRIVI QUI LA TUA RISPOSTA */
