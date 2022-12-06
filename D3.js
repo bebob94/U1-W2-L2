@@ -136,7 +136,7 @@ if (typeof valore== "number") {
 
 let valx=16
 
-if (valx%2==0) {
+if (valx%2===0) {
   console.log("il numero è pari");
 } else{
   console.log("il numero è dispari");
